@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+@font-face {
+    font-family: script;
+    src: url('/assets/fonts/script.otf');
+}
+
+
+.default-container {
+    font-family: 'Cabin', sans-serif !important;
+}
+
+.link-silent {
+    color: #4c4c4c;
+}
+
+.link-silent:hover {
+    filter: invert(40%);
+}
+
+.text-silent {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+}
+
+.section1-right {
+    background: #FC466B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 3.5rem !important;
+    font-weight: 500;
+}
+
+.cursive-header {
+    font-family: script;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.bottom-column
+{
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+/*Scroll down arrow*/
+
+.arrow-wave {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0;
+   margin-bottom: -20%;  
+/*   background-color: rgba(100,100,100,0.4); */
+}
+
+.arrow-wave span {
+  display: block;
+  position: relative;
+  height: 15px;
+  width: 31px;
+/*   background-color: rgba(100,100,100,0.4); */
+  opacity: 0.2;
+}
+
+.arrow-wave span::before,
+.arrow-wave span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 24px;
+  background-color: #454545;
+}
+
+.arrow-wave span::before {
+  top: -2px;
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(45deg);
+}
+
+.arrow-wave span::after {
+  top: -2px;
+  right: 0;
+  transform-origin: right center;
+  transform: rotate(-45deg);
+}
+
+.arrow-wave span:nth-child(1n) {
+  animation: animate-arrow-wave 2s infinite;
+  animation-delay: .25s;
+}
+.arrow-wave span:nth-child(2n) {
+  animation: animate-arrow-wave 2s infinite;
+  animation-delay: .50s;
+}
+
+.arrow-wave span:nth-child(3n) {
+  animation: animate-arrow-wave 2s infinite;
+  animation-delay: .75s;
+}
+
+@keyframes animate-arrow-wave {
+  0%   { opacity: 0.2; }
+  25%  { opacity: 0.2; }
+  50%  { opacity: 0.2; }
+  75%  { opacity: 1.0; }
+  100% { opacity: 0.2; }
+}
+
