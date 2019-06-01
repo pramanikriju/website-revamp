@@ -64,26 +64,72 @@
                     </span>
                 </div>
 
-
-                <div class="arrow-wave " data-aos="zoom-out-up" data-aos-delay="2000">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <a data-scroll href="#about">
+                    <div class="arrow-wave" data-aos="zoom-out-up" data-aos-delay="2000">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
 
 
             </div>
 
             <div class="col-md-6 col-sm-12 section1-right" id="particles-js">
                 <div class="row text-center">
-                    
-                    <div class="col-md-12"
-                
+
+                    <div class="col-md-12">
+
+                    </div>
+
                 </div>
 
 
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid default-container " id="about">
+        <div class="row text-center" style="height: 100vh;">
+
+
+            <div class="col-md-6 section2-left">
+                <h2 class="mb-5 pb-2">What I do</h2>
+                
+                <div class="row">
+                    <div class="col-md-5 offset-md-1 ">
+                        <div class="card" data-aos="fade-down-right">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-5" data-aos="fade-down-left">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <div class="col-md-6 section2-right" style="">
+
+            </div>
+
+        </div>
+
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -95,6 +141,8 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
     <script>
         AOS.init();
         particlesJS.load('particles-js', 'assets/particles.json', function() {
@@ -109,8 +157,18 @@
             loop: true,
             // cursorChar: '<img src="assets/img/rocket.svg" height="10px" width="10px">',
         }).go();
+
+        waves = document.getElementsByClassName('arrow-wave');
+        if ($(window).width() < 768) {
+            waves.hide();
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 700,
+            easing: 'easeInCubic',
+        });
     </script>
-    <script src="assets/js/pace.min.js"></script>
+
 
 
 </body></html>
