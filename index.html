@@ -36,7 +36,7 @@
 
 
     <!-- Page Content -->
-    <div class="container-fluid p-0 mh-100">
+    <div class="container-fluid p-0 mh-100 scroll-section">
         <div class="row m-0 mh-100" style="height: 100vh;">
             <div class="col-md-6 col-sm-12 text-center default-container my-auto" data-aos="fade-up" data-aos-delay="500">
                 <h1 class="mt-5 cursive-header">Riju Pramanik</h1>
@@ -94,7 +94,7 @@
         </div>
     </div>
 
-    <div class="container-fluid default-container " id="about">
+    <div class="container-fluid default-container scroll-section" id="about">
         <div class="row text-center" style="height: 100vh;">
 
 
@@ -105,7 +105,7 @@
                     <div class="col-md-6 " data-aos="fade-down-right" data-aos-delay="200">
                         <i class="fal fa-globe fa-5x m-3"></i>
                         <br>
-                        <h3>Website Development</h3>
+                        <h3>Tech Consultant</h3>
                         <p class="text-muted p-1">Landing pages, storefronts or static sites </p>
                     </div>
 
@@ -135,28 +135,28 @@
                     </div>
 
                 </div>
-                
+
                 <div class="row pt-5 mt-5">
                     <div class="col tech-stack">
-                            <i class="fab fa-html5 fa-3x"></i>
+                        <i class="fab fa-html5 fa-3x"></i>
                     </div>
                     <div class="col tech-stack">
-                            <i class="fab fa-css3 fa-3x"></i>
-                    </div>
-                     <div class="col tech-stack">
-                            <i class="fab fa-js-square fa-3x"></i>
-                    </div>
-                     <div class="col tech-stack">
-                            <i class="fab fa-laravel fa-3x"></i>
+                        <i class="fab fa-css3 fa-3x"></i>
                     </div>
                     <div class="col tech-stack">
-                            <i class="fab fa-php fa-3x"></i>
+                        <i class="fab fa-js-square fa-3x"></i>
                     </div>
-                     <div class="col tech-stack">
-                            <i class="fab fa-adobe fa-3x"></i>
+                    <div class="col tech-stack">
+                        <i class="fab fa-laravel fa-3x"></i>
                     </div>
-                     <div class="col tech-stack">
-                            <i class="fab fa-aws fa-3x"></i>
+                    <div class="col tech-stack">
+                        <i class="fab fa-php fa-3x"></i>
+                    </div>
+                    <div class="col tech-stack">
+                        <i class="fab fa-adobe fa-3x"></i>
+                    </div>
+                    <div class="col tech-stack">
+                        <i class="fab fa-aws fa-3x"></i>
                     </div>
                 </div>
 
@@ -164,7 +164,7 @@
 
 
             </div>
-            <div class="col-md-6 section2-right my-auto" >
+            <div class="col-md-6 section2-right my-auto">
                 <div class="owl-carousel p-5">
                     <img src="http://placehold.it/320x240?text=Slide%200">
                     <img src="http://placehold.it/320x240?text=Slide%201">
@@ -178,8 +178,8 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--Scroll Animation JS    -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
@@ -190,10 +190,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
     <script>
         AOS.init();
         particlesJS.load('particles-js', 'assets/particles.json', function() {
             console.log('callback - particles.js config loaded');
+        });
+
+        $.scrollify({
+            section: ".scroll-section",
+            
         });
 
         const instance = new TypeIt('#typed', {
@@ -212,7 +218,7 @@
 
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 700,
-            easing: 'easeInCubic',
+            easing: 'easeOutQuart',
         });
 
         $(".owl-carousel").owlCarousel({
@@ -227,6 +233,38 @@
             animateOut: 'slideOutUp',
             animateIn: 'slideInUp'
         });
+    </script>
+    <script>
+        function getCssValuePrefix() {
+            var rtrnVal = ''; //default to standard syntax
+            var prefixes = ['-o-', '-ms-', '-moz-', '-webkit-'];
+
+            // Create a temporary DOM object for testing
+            var dom = document.createElement('div');
+
+            for (var i = 0; i < prefixes.length; i++) {
+                // Attempt to set the style
+                dom.style.background = prefixes[i] + 'linear-gradient(#000000, #ffffff)';
+
+                // Detect if the style was successfully set
+                if (dom.style.background) {
+                    rtrnVal = prefixes[i];
+                }
+            }
+
+            dom = null;
+            delete dom;
+
+            return rtrnVal;
+        }
+
+        // Setting the gradient with the proper prefix
+        //        var colorone = '#3F5EFB';
+        //        var colortwo = '#FC466B';
+        //        var orientation = 'to right';
+        //        var dom = document.getElementsByClassName("section2-right");
+        //        dom.style.backgroundImage = getCssValuePrefix() + 'linear-gradient(' +
+        //            orientation + ', ' + colorone + ', ' + colortwo + ')';
     </script>
 
 

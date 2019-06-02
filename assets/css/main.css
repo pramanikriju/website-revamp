@@ -38,6 +38,7 @@
     max-height: 100vh;
 }
 
+
 .cursive-header {
     font-family: script;
     font-size: 5rem;
@@ -63,6 +64,7 @@
 
 .tech-stack:hover {
     color: #555;
+    transition-delay: 0.05s;
 }
 
 
