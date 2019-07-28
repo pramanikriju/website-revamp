@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @font-face {
     font-family: script;
     src: url('../fonts/script.otf');
 }
 
+body ,p {
+    font-family: 'Comfortaa', cursive;
+}
 
-.default-container {
+
+.default-container  {
     font-family: 'Cabin', sans-serif !important;
+}
+
+h1 ,h2 ,h3, h4, h5 {
+        font-family: 'Lato', sans-serif;
 }
 
 .link-silent {
@@ -15,9 +23,10 @@
 }
 
 .link-silent:hover {
-    filter: invert(40%);
+    color: #3F5EFB;
     transition: 0.2s;
     transition-timing-function: ease-in;
+
 }
 
 .text-silent {
