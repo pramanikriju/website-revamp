@@ -1,21 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 @font-face {
     font-family: script;
     src: url('../fonts/script.otf');
 }
 
-body ,p {
+body,
+p {
     font-family: 'Comfortaa', cursive;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px; background-color: #AAA; } ::-webkit-scrollbar-button:hover{ background-color: #AAA; } ::-webkit-scrollbar-thumb{ background-color: #8080ff; border-radius: 250px; } ::-webkit-scrollbar-thumb:hover{ background-color: #CCC; } ::-webkit-scrollbar-track{ background-color: #efefef; } ::-webkit-scrollbar-track:hover{ background-color: #CCC; } ::-webkit-scrollbar{ width: 7px; }
 
-.default-container  {
+
+
+
+.default-container {
     font-family: 'Cabin', sans-serif !important;
 }
 
-h1 ,h2 ,h3, h4, h5 {
-        font-family: 'Lato', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Lato', sans-serif;
 }
 
 .link-silent {
@@ -33,18 +44,57 @@ h1 ,h2 ,h3, h4, h5 {
     font-family: 'Comfortaa', cursive;
     font-size: 1.2rem;
 }
+ @-webkit-keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-moz-keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
 
 .section1-right {
-    background: #FC466B;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3F5EFB, #FC466B);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 3.5rem !important;
-    font-weight: 500;
-    filter: blur(50%);
-    max-height: 100vh;
+    background: linear-gradient(270deg, #fc466b , #3f5efb);
+    background-size: 200% 200%;
+
+    -webkit-animation: gradientAnimation 25s ease infinite;
+    -moz-animation: gradientAnimation 25s ease infinite;
+    animation: gradientAnimation 25s ease infinite;
+
+   
 }
 
 
@@ -68,7 +118,7 @@ h1 ,h2 ,h3, h4, h5 {
 
 .tech-stack {
     color: #333;
-    text-shadow: 0px -1px 0px rgba(255,255,255,.5);
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, .5);
 }
 
 .tech-stack:hover {
@@ -109,7 +159,7 @@ h1 ,h2 ,h3, h4, h5 {
     content: "";
     position: absolute;
     height: 4px;
-    width: 24px;
+    width: 23px;
     background-color: #454545;
 }
 

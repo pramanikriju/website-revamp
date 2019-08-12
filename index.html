@@ -36,8 +36,8 @@
 
 
     <!-- Page Content -->
-    <div class="container-fluid p-0 mh-100 scroll-section">
-        <div class="row m-0 mh-100" style="height: 100vh;">
+    <div class="container-fluid  mh-100 scroll-section">
+        <div class="row  mh-100" style="height: 100vh;">
             <div class="col-md-6 col-sm-12 text-center default-container my-auto" data-aos="fade-up" data-aos-delay="500">
                 <h1 class="mt-5 cursive-header">Riju Pramanik</h1>
                 <p class="text-silent" id="typed"></p>
@@ -95,7 +95,7 @@
     </div>
 
     <div class="container-fluid default-container scroll-section" id="about">
-        <div class="row text-center " style="height: 100vh;">
+        <div class="row text-center " style="min-height: 100vh;">
 
 
             <div class="col-md-6 section2-left align-self-center h-100">
@@ -213,10 +213,6 @@
             console.log('callback - particles.js config loaded');
         });
 
-        $.scrollify({
-            section: ".scroll-section",
-
-        });
 
         const instance = new TypeIt('#typed', {
             strings: ["Technology Consultant", "Web Developer ", "Technologist ", "Cloud Consultant", "Photographer "],
@@ -252,36 +248,7 @@
 
     </script>
     <script>
-        function getCssValuePrefix() {
-            var rtrnVal = ''; //default to standard syntax
-            var prefixes = ['-o-', '-ms-', '-moz-', '-webkit-'];
-
-            // Create a temporary DOM object for testing
-            var dom = document.createElement('div');
-
-            for (var i = 0; i < prefixes.length; i++) {
-                // Attempt to set the style
-                dom.style.background = prefixes[i] + 'linear-gradient(#000000, #ffffff)';
-
-                // Detect if the style was successfully set
-                if (dom.style.background) {
-                    rtrnVal = prefixes[i];
-                }
-            }
-
-            dom = null;
-            delete dom;
-
-            return rtrnVal;
-        }
-
-        // Setting the gradient with the proper prefix
-        //        var colorone = '#3F5EFB';
-        //        var colortwo = '#FC466B';
-        //        var orientation = 'to right';
-        //        var dom = document.getElementsByClassName("section2-right");
-        //        dom.style.backgroundImage = getCssValuePrefix() + 'linear-gradient(' +
-        //            orientation + ', ' + colorone + ', ' + colortwo + ')';
+      
 
     </script>
 
