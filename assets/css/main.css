@@ -122,8 +122,8 @@ h5 {
 
 .section2-left {
     background-color: #121111;
-    color: white;
     padding: 6rem;
+    z-index: 999;
 }
 
 .tech-stack {
