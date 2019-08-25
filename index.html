@@ -70,7 +70,7 @@
                 </div>
 
                 <a data-scroll href="#about">
-                    <div class="arrow-wave" data-aos="zoom-out-up">
+                    <div class="arrow-wave" data-aos="zoom-out-up" id="waves">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -81,7 +81,7 @@
             </div>
 
             <div class="col-md-6 col-sm-12 section1-right  m-0" id="particles-js">
-<!--
+                <!--
 
                 <div class="card my-auto">
                     <div class="card-body">
@@ -95,56 +95,100 @@
         </div>
     </div>
 
-    <div class="container-fluid default-container scroll-section section2-left "  id="about">
+    <div class="container-fluid default-container scroll-section section2-left " id="about">
         <div class="row text-center ">
 
 
 
-            <div class="col-md-8 offset-md-2  mt-4 " data-aos="zoom-in-left" data-aos-delay="600">
+            <div class="col-lg-10 offset-lg-1 col-sm-12 offset-sm-0  mt-4 mw-100" data-aos="zoom-in-left" data-aos-delay="300">
                 <div class="jumbotron">
                     <h1 class="display-3">Hey!</h1>
-                    <p class="lead">I am <span class="text-gradient lead"><strong>Riju Pramanik</strong></span>, a full stack developer. I help design, develop and manage digital experiences.</p>
+                    <p class="lead" style="font-size: 1.7em;">I am <span class="text-gradient lead" style="font-size: 1em;"><strong>Riju Pramanik</strong></span>, a full stack developer.
+                        <br>I help design, develop and manage digital experiences.</p>
                     <hr class="my-4">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-3">
+                            <i class="fal fa-cogs fa-5x m-3"></i>
+                            <br>
+                            <h3>Tech Consultant</h3>
+                            <p class="text-muted p-1">Landing pages, storefronts or static sites </p>
 
                         </div>
-                        <div class="col-md-5">
-                            <div class="owl-carousel p-5">
-                                <div class="col tech-stack">
-                                    <i class="fab fa-html5 fa-3x"></i>
-                                </div>
-                                <div class="col tech-stack">
-                                    <i class="fab fa-css3 fa-3x"></i>
-                                </div>
-                                <div class="col tech-stack">
-                                    <i class="fab fa-js-square fa-3x"></i>
-                                </div>
-                                <div class="col tech-stack">
-                                    <i class="fab fa-laravel fa-3x"></i>
-                                </div>
-                                <div class="col tech-stack">
-                                    <i class="fab fa-php fa-3x"></i>
-                                </div>
-                                <div class="col tech-stack">
-                                    <i class="fab fa-adobe fa-3x"></i>
-                                </div>
-                                <div class="col tech-stack">
-                                    <i class="fab fa-aws fa-3x"></i>
-                                </div>
-
-
-                            </div>
+                        <div class="col-md-3">
+                            <i class="fal fa-laptop-code fa-5x m-3"></i>
+                            <br>
+                            <h3>Web Apps</h3>
+                            <p class="text-muted p-1">Large scale Web Apps, e-commerce stores or custom solutions</p>
                         </div>
+                        <div class="col-md-3">
+                            <i class="fal fa-camera fa-5x m-3"></i>
+                            <br>
+                            <h3>Photography</h3>
+                            <p class="text-muted p-1">Portraits, events and commercial Photography</p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fal fa-pencil-paintbrush fa-5x m-3"></i>
+                            <br>
+                            <h3>Graphics and Media</h3>
+                            <p class="text-muted p-1">Promotional Videos, brand strategies and concept visualisation</p>
+
+                        </div>
+
                     </div>
 
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        <!--                        <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Learn more</a>-->
                     </p>
                 </div>
 
             </div>
 
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col tech-stack">
+                <i class="fab fa-html5 fa-3x"></i>
+            </div>
+            <div class="col tech-stack">
+                <i class="fab fa-css3 fa-3x"></i>
+            </div>
+            <div class="col tech-stack">
+                <i class="fab fa-js-square fa-3x"></i>
+            </div>
+            <div class="col tech-stack">
+                <i class="fab fa-laravel fa-3x"></i>
+            </div>
+            <div class="col tech-stack">
+                <i class="fab fa-php fa-3x"></i>
+            </div>
+            <div class="col tech-stack">
+                <i class="fab fa-adobe fa-3x"></i>
+            </div>
+            <div class="col tech-stack">
+                <i class="fab fa-aws fa-3x"></i>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid default-container scroll-section  " id="projects">
+        <div class="row text-center mt-5 ">
+            <div class="col-12 mt-5">
+                <h1>Projects</h1>
+            </div>
+            <div class="col-md-3     offset-md-1">
+                <div class="card">
+                    <img class="img-fluid" src="https://via.placeholder.com/100" alt="Card image cap">
+                    <div class="card-header text-gradient project-card-header">
+                        OneWalletHub
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -179,9 +223,9 @@
             // cursorChar: '<img src="assets/img/rocket.svg" height="10px" width="10px">',
         }).go();
 
-        waves = document.getElementsByClassName('arrow-wave');
+
         if ($(window).width() < 768) {
-            waves.hide();
+            document.getElementById('waves').remove();
         }
 
         var scroll = new SmoothScroll('a[href*="#"]', {
