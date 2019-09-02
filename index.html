@@ -64,7 +64,7 @@
                     <span class="fa-stack fa-lg" data-aos="fade-up-left" data-aos-delay="1600">
                         <a class="link-silent" href="https://github.com/pramanikriju/" target="_blank">
                             <i class="fal fa-circle fa-2x fa-stack-1x"></i>
-                            <strong> <i class="fab fa-github fa-stack-1x"></i></strong>
+                            <strong> <i class="fab fa-github gradient-fa fa-stack-1x"></i></strong>
                         </a>
                     </span>
                 </div>
@@ -80,7 +80,7 @@
 
             </div>
 
-            <div class="col-md-6 col-sm-12 section1-right  m-0" id="particles-js">
+            <div class="col-md-6 col-sm-12 section1-right  m-0 d-none d-lg-block" id="particles-js">
                 <!--
 
                 <div class="card my-auto">
@@ -100,7 +100,7 @@
 
 
 
-            <div class="col-lg-10 offset-lg-1 col-sm-12 offset-sm-0  mt-4 mw-100" data-aos="zoom-in-left" data-aos-delay="300">
+            <div class="col-lg-10 offset-lg-1 col-sm-12   mt-4 mw-100" data-aos="zoom-out-up">
                 <div class="jumbotron">
                     <h1 class="display-3">Hey!</h1>
                     <p class="lead" style="font-size: 1.7em;">I am <span class="text-gradient lead" style="font-size: 1em;"><strong>Riju Pramanik</strong></span>, a full stack developer.
@@ -146,25 +146,25 @@
 
         </div>
         <div class="row text-center mt-5">
-            <div class="col tech-stack">
+            <div class="col tech-stack" data-aos="fade-up" data-aos-delay="110">
                 <i class="fab fa-html5 fa-3x"></i>
             </div>
-            <div class="col tech-stack">
+            <div class="col tech-stack" data-aos="fade-up" data-aos-delay="120">
                 <i class="fab fa-css3 fa-3x"></i>
             </div>
-            <div class="col tech-stack">
+            <div class="col tech-stack" data-aos="fade-up" data-aos-delay="140">
                 <i class="fab fa-js-square fa-3x"></i>
             </div>
-            <div class="col tech-stack">
+            <div class="col tech-stack" data-aos="fade-up" data-aos-delay="160">
                 <i class="fab fa-laravel fa-3x"></i>
             </div>
-            <div class="col tech-stack">
+            <div class="col tech-stack" data-aos="fade-up" data-aos-delay="180">
                 <i class="fab fa-php fa-3x"></i>
             </div>
-            <div class="col tech-stack">
+            <div class="col tech-stack" data-aos="fade-up" data-aos-delay="190">
                 <i class="fab fa-adobe fa-3x"></i>
             </div>
-            <div class="col tech-stack">
+            <div class="col tech-stack" data-aos="fade-up" data-aos-delay="190">
                 <i class="fab fa-aws fa-3x"></i>
             </div>
 
@@ -174,16 +174,48 @@
     </div>
 
     <div class="container-fluid default-container scroll-section  " id="projects">
-        <div class="row text-center mt-5 ">
-            <div class="col-12 mt-5">
-                <h1>Projects</h1>
+        <div class="row text-center mt-5 mx-lg-5">
+            <div class="col-12 mt-5 mb-4">
+                <h1>My Work</h1>
             </div>
-            <div class="col-md-3     offset-md-1">
-                <div class="card">
-                    <img class="img-fluid" src="https://via.placeholder.com/100" alt="Card image cap">
-                    <div class="card-header text-gradient project-card-header">
-                        OneWalletHub
+            <div class="col-md-3 " data-aos="fade-up">
+                <div class="card project-card">
+                    <img class="img-fluid mh-50" src="assets/img/owh.png" alt="Card image cap">
+                    <hr>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
+                </div>
+                <div class="card project-card mt-3">
+                    <img class="img-fluid mh-50" src="assets/img/owh.png" alt="Card image cap">
+                    <hr>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="card project-card">
+                    <img class="img-fluid " src="assets/img/renderbit.png" alt="Card image cap">
+                    <hr>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="card project-card">
+                    <img class="img-fluid mh-50" src="assets/img/duotone.png" alt="Card image cap">
+                    <hr>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-3" data-aos="fade-up">
+                <div class="card project-card">
+                    <img class="img-fluid mh-50" src="assets/img/duotone.png" alt="Card image cap">
+                    <hr>
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
@@ -220,7 +252,8 @@
             breakLines: false,
             waitUntilVisible: true,
             loop: true,
-            // cursorChar: '<img src="assets/img/rocket.svg" height="10px" width="10px">',
+            startDelay: 1500,
+            lifeLike: true, // cursorChar: '<img src="assets/img/rocket.svg" height="10px" width="10px">',
         }).go();
 
 
