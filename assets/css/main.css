@@ -147,6 +147,19 @@ h5 {
     font-size: 2em;
 
 }
+.squiggly {
+    font-size: 2em;
+}
+
+.squiggly:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%233f5efb' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 12px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    padding-top: 25px;
+    -webkit-background-clip: none;
+}
 
 
 .cursive-header {
@@ -185,7 +198,7 @@ h5 {
 
 .project-card {
     border-radius: 0.4em;
-     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .project-card img {
@@ -193,14 +206,15 @@ h5 {
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    filter: grayscale(0.25);
-    
-  
+    filter: grayscale(0.1);
+
+
 }
+
 .project-card:hover {
     filter: grayscale(0);
-/*    transform:  scale(1.01);*/
-    transform: translateY(-2%);
+    /*    transform:  scale(1.01);*/
+    transform: translateY(-1%);
     transition: filter 0.3s, transform 0.2s;
 }
 
