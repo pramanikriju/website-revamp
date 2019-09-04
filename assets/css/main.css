@@ -181,12 +181,12 @@ h5 {
 }
 
 .tech-stack {
-    color: #333;
+    color: #666;
     text-shadow: 0px -1px 0px rgba(255, 255, 255, .5);
 }
 
 .tech-stack:hover {
-    color: #555;
+    color: #888;
     transition-delay: 0.05s;
 }
 
@@ -218,6 +218,9 @@ h5 {
     transition: filter 0.3s, transform 0.2s;
 }
 
+.video-embed {
+    border-radius: 0.25rem;
+}
 
 
 /*Scroll down arrow*/
