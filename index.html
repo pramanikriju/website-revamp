@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 
 
     <!--    Make all links open in new tab-->
@@ -299,30 +298,61 @@
             </div>
             <div class="col-lg-6  col-sm-12 ">
                 <div class="embed-responsive embed-responsive-16by9 my-5 video-embed">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HRW1324tARQ?autoplay=0&showinfo=0&controls=0" allowfullscreen></iframe>
+                    <video class="video">
+                        <source src="assets/videos/renderbit.mp4" class="embed-responsive-item" type="video/mp4" loop />
+                    </video>
+                    <div class="playpause"></div>
                 </div>
             </div>
             <div class="col-lg-6  col-sm-12 ">
                 <div class="embed-responsive embed-responsive-16by9 my-5 video-embed">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wlz9mCYcWPk?autoplay=0&showinfo=0&controls=0" allowfullscreen></iframe>
+                    <video class="video">
+                        <source src="assets/videos/owh-promo.mp4" class="embed-responsive-item" type="video/mp4" loop />
+                    </video>
+                    <div class="playpause"></div>
+                </div>
+
+            </div>
+            <div class="col-lg-6  col-sm-12 ">
+                <div class="embed-responsive embed-responsive-16by9 my-5 video-embed">
+                    <video class="video">
+                        <source src="assets/videos/convergence.mp4" class="embed-responsive-item" type="video/mp4" loop />
+                    </video>
+                    <div class="playpause"></div>
                 </div>
             </div>
-             <div class="col-lg-6  col-sm-12 ">
-                <div class="embed-responsive embed-responsive-16by9 mb-5 video-embed">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PXXysQPcnBQ?autoplay=0&showinfo=0&controls=0" allowfullscreen></iframe>
-                </div>
-            </div>
-             <div class="col-lg-6  col-sm-12 ">
-                <div class="embed-responsive embed-responsive-16by9 mb-5 video-embed">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/55zcBhmseh8?autoplay=0&showinfo=0&controls=0" allowfullscreen></iframe>
+            <div class="col-lg-6  col-sm-12 ">
+                <div class="embed-responsive embed-responsive-16by9 my-5 video-embed">
+                    <video class="video">
+                        <source src="assets/videos/owh-explainer.mp4" class="embed-responsive-item" type="video/mp4" loop />
+                    </video>
+                    <div class="playpause"></div>
                 </div>
             </div>
         </div>
 
     </div>
-        <div class="container-fluid default-container scroll-section p-0 " id="contact">
-        <div class="typeform-widget" data-url="https://rijupramanik.typeform.com/to/EQS41m" style="width: 100%; height: 100vh;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-</div>
+    <div class="container-fluid default-container scroll-section p-0 " id="contact">
+        <div class="typeform-widget" data-url="https://rijupramanik.typeform.com/to/EQS41m" style="width: 100%; height: 100vh;"></div>
+        <script>
+            (function() {
+                var qs, js, q, s, d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm",
+                    b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                    js = ce.call(d, "script");
+                    js.id = id;
+                    js.src = b + "embed.js";
+                    q = gt.call(d, "script")[0];
+                    q.parentNode.insertBefore(js, q)
+                }
+            })()
+
+        </script>
+    </div>
 
 
 
@@ -337,9 +367,6 @@
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
     <script>
         AOS.init();
         particlesJS.load('particles-js', 'assets/particles.json', function() {
@@ -365,6 +392,16 @@
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 700,
             easing: 'easeOutQuart',
+        });
+
+        $('.video').parent().click(function() {
+            if ($(this).children(".video").get(0).paused) {
+                $(this).children(".video").get(0).play();
+                $(this).children(".playpause").fadeOut();
+            } else {
+                $(this).children(".video").get(0).pause();
+                $(this).children(".playpause").fadeIn();
+            }
         });
 
     </script>
