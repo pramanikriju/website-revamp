@@ -40,6 +40,7 @@ h5 {
 */
 }
 
+
 .text-silent {
     font-family: 'Comfortaa', cursive;
     font-size: 1.2rem;
@@ -128,6 +129,9 @@ h5 {
     -webkit-background-clip: none;
 }
 
+.fixed-height{
+    min-height: 6em;
+}
 
 .cursive-header {
     font-family: script;
