@@ -22,6 +22,12 @@
 
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
 
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.css">
+
+
     <!--Favicons-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -43,7 +49,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-50433009-2');
-
     </script>
 
 
@@ -101,6 +106,10 @@
             </div>
 
             <div class="col-md-6 col-sm-12 section1-right  m-0 d-none d-lg-block" id="particles-js">
+
+
+
+
                 <!--
 
                 <div class="card my-auto">
@@ -109,7 +118,6 @@
                     </div>
                 </div>
 -->
-
 
             </div>
         </div>
@@ -320,7 +328,7 @@
             </div>
             <div class="col-lg-6  col-sm-12 ">
                 <div class="embed-responsive embed-responsive-16by9 my-5 video-embed">
-                    <video class="video">
+                    <video class="video" poster="assets/videos/renderbit.png">
                         <source src="assets/videos/renderbit.mp4" class="embed-responsive-item" type="video/mp4" loop />
                     </video>
                     <div class="playpause"></div>
@@ -328,7 +336,7 @@
             </div>
             <div class="col-lg-6  col-sm-12 ">
                 <div class="embed-responsive embed-responsive-16by9 my-5 video-embed">
-                    <video class="video">
+                    <video class="video" poster="assets/videos/owh-promo.png">
                         <source src="assets/videos/owh-promo.mp4" class="embed-responsive-item" type="video/mp4" loop />
                     </video>
                     <div class="playpause"></div>
@@ -351,6 +359,33 @@
                     <div class="playpause"></div>
                 </div>
             </div>
+
+            <div class="col-12">
+
+
+                <div class="jumbotron">
+                    <h1 class="display-5">Photography</h1>
+                    <p class="lead" style="font-size: 1.7em;">I am a <span class="text-gradient lead" style="font-size: 1em;"><strong>freelance photographer</strong></span> specializing in
+                        <br>portraits, commercial and product photography</p>
+                    <hr class="my-4">
+                    <div class="owl-carousel owl-theme">
+                        <img src="assets/photos/1.png" class="img-fluid" id="prettyPhoto">
+
+                        <img src="assets/photos/2.png" class="img-fluid" id="prettyPhoto">
+
+                        <img src="assets/photos/3.png" class="img-fluid" id="prettyPhoto">
+
+                        <img src="assets/photos/4.png" class="img-fluid" id="prettyPhoto">
+
+                        <img src="assets/photos/5.png" class="img-fluid" id="prettyPhoto">
+
+                    </div>
+
+                    <p class="lead">
+                        <a class="btn btn-outline-secondary btn-lg" href="https://riju.co/photography" role="button">Learn more</a>
+                    </p>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -370,7 +405,9 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
 
     <script>
         AOS.init({
@@ -396,6 +433,18 @@
             document.getElementById('waves').remove();
         }
 
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            lazyLoad: true,
+            loop: true,
+            margin: 2,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false,
+            dots: true,
+        });
+
+        $("prettyPhoto").fancybox();
 
 
         $('.video').parent().click(function() {
@@ -407,7 +456,6 @@
                 $(this).children(".playpause").fadeIn();
             }
         });
-
     </script>
     <script src="assets/js/typeform.js"></script>
 

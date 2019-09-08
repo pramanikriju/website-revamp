@@ -101,6 +101,10 @@ h5 {
 
 }
 
+.carousel-item {
+  max-height: 60vh;
+}
+
 .text-gradient {
     color: transparent;
     background: linear-gradient(270deg, #fc466b, #3f5efb);
