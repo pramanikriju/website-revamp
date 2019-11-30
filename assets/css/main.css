@@ -216,6 +216,28 @@ h5 {
 }
 
 
+.svg-bg {
+/*
+    background: url('/assets/svg/developer.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+*/
+}
+.svg-bg::after {
+  content: "";
+/*  background: url('/assets/svg/developer.svg') no-repeat center center fixed; */
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar-button {
     display: none;
