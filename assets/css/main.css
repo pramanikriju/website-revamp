@@ -246,7 +246,7 @@ h5 {
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#4c4c4c; /* change if the mask should have another color then white */
+	background-color:#121111; /* change if the mask should have another color then white */
 	z-index:99; /* makes sure it stays on top */
     margin: auto;
 }

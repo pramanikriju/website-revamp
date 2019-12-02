@@ -96,7 +96,7 @@
                 </div>
 
 
-                <a data-scroll href="#about" target="_self" class="mt-lg-5">
+                <a id="waves" target="_self" class="mt-lg-5">
                     <div class="arrow-wave " id="waves">
                         <span></span>
                         <span></span>
@@ -131,7 +131,7 @@
                     <p class="lead" style="font-size: 1.7em;">I am <span class="text-gradient lead" style="font-size: 1em;font-weight: 400;"><strong>Riju Pramanik</strong></span>, a full stack developer.
                         <br>I help design, develop and manage digital experiences.</p>
                     <div class="row">
-                        <div class="col-md-8 offset-md-2 mt-4">
+                        <div class="col-md-8 offset-md-2 pt-4">
                             <img src="assets/svg/developer.svg" class="img-fluid ">
                         </div>
                     </div>
@@ -141,14 +141,14 @@
                             <i class="fal fa-cogs fa-5x m-3"></i>
                             <br>
                             <h3>Tech Consultant</h3>
-                            <p class="text-muted p-1">Landing pages, storefronts or static sites </p>
+                            <p class="text-muted p-1">Large scale Web Apps, e-commerce stores or custom solutions </p>
 
                         </div>
                         <div class="col-md-3">
                             <i class="fal fa-laptop-code fa-5x m-3"></i>
                             <br>
                             <h3>Web Apps</h3>
-                            <p class="text-muted p-1">Large scale Web Apps, e-commerce stores or custom solutions</p>
+                            <p class="text-muted p-1">Landing pages, storefronts or static sites</p>
                         </div>
                         <div class="col-md-3">
                             <i class="fal fa-camera fa-5x m-3"></i>
@@ -209,15 +209,15 @@
     <div class="container-fluid default-container scroll-section  mb-5 pb-5" id="projects">
         <div class="row text-center mt-4 mx-lg-5 px-lg-2">
             <div class="col-12 mt-5 mb-4">
-                <h2>My Work</h2>
+                <h2 class="font-weight-bold">My Work</h2>
             </div>
             <div class="col-12 mt-5 mb-5 pb-3 " data-aos="fade-up">
                 <div class=" ">
                     <div class="row">
-                        <div class="col-4 my-auto">
-                            <img src="assets/svg/custom_solutions.svg" class="img-fluid ">
+                        <div class="col-lg-4  my-auto">
+                            <img src="assets/svg/custom_solutions.svg" class="img-fluid mb-5">
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
@@ -232,11 +232,13 @@
                                         <div class="card-body">
                                             <div class="row">
 
-                                                <div class="col-8 my-auto px-5">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                <div class="col-lg-8 my-auto px-5">
+                                                    Looking for experienced developers who can guide your team in their development flow? Are you worried about wasting resources and time with the wrong technology stack?
+                                                    <br>
+                                                    
                                                 </div>
-                                                <div class="col-4">
-                                                    <img src="assets/svg/consultant.svg" class="img-fluid ">
+                                                <div class="col-lg-4">
+                                                    <img src="assets/svg/consultant.svg" class="img-fluid p-4">
                                                 </div>
                                             </div>
 
@@ -255,11 +257,11 @@
                                         <div class="card-body">
                                             <div class="row">
 
-                                                <div class="col-8 my-auto px-5">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                <div class="col-lg-8 my-auto px-5">
+                                                     Uncover the best business technology solutions that can address your current challenges and propel your organization towards more efficient operation.
                                                 </div>
-                                                <div class="col-4">
-                                                    <img src="assets/svg/web_developer.svg" class="img-fluid ">
+                                                <div class="col-lg-4">
+                                                    <img src="assets/svg/web_developer.svg" class="img-fluid p-4">
                                                 </div>
                                             </div>
                                         </div>
@@ -277,11 +279,11 @@
                                         <div class="card-body">
                                             <div class="row">
 
-                                                <div class="col-8 my-auto px-5">
+                                                <div class="col-lg-8 my-auto px-5">
                                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
                                                 </div>
-                                                <div class="col-4">
-                                                    <img src="assets/svg/ui.svg" class="img-fluid ">
+                                                <div class="col-lg-4">
+                                                    <img src="assets/svg/ui.svg" class="img-fluid p-4">
                                                 </div>
                                             </div>
                                         </div>
@@ -506,7 +508,11 @@
         //            console.log('callback - particles.js config loaded');
         //        });
 
-
+        $("#waves").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 500);
+        });
         const instance = new TypeIt('#typed', {
             strings: ["Technology Consultant", "Web Developer ", "Technologist ", "Cloud Consultant", "Photographer "],
             speed: 50,
