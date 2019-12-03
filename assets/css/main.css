@@ -4,6 +4,7 @@
 
 @font-face {
     font-family: script;
+    font-display: auto;
     src: url('../fonts/script.otf');
 }
 
