@@ -12,7 +12,7 @@
 
 
     <title>Riju Pramanik | Developer and Technology Consultant</title>
-    
+
     <!--    Preconnect for performance-->
     <link rel="preconnect" href="https://code.jquery.com">
     <link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
@@ -54,6 +54,24 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-50433009-2');
+
+    </script>
+    <!-- Hotjar Tracking Code for www.riju.co -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1598865,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 
     </script>
 
@@ -103,9 +121,9 @@
                     </span>
                 </div>
 
-                <div class="waves">
-                    <a id="waves" target="_self" class="mt-5">
-                        <div class="arrow-wave mt-5" id="waves">
+                <div class="waves row">
+                    <a id="waves" target="_self" class="mt-5 col-12" data-aos="fade-up">
+                        <div class="arrow-wave mt-5 pt-5" id="waves">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -509,7 +527,7 @@
 
 
     <!-- Bootstrap core JavaScript -->
-    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <!--Scroll Animation JS    -->
     <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
@@ -547,16 +565,16 @@
         });
         const instance = new TypeIt('#typed', {
             strings: ["Technology Consultant", "Web Developer ", "Technologist ", "Cloud Consultant", "Photographer "],
-            speed: 50,
+            speed: 60,
             breakLines: false,
             waitUntilVisible: true,
             loop: true,
             startDelay: 1000,
-            lifeLike: true, // cursorChar: '<img src="assets/img/rocket.svg" height="10px" width="10px">',
+            lifeLike: false, // cursorChar: '<img src="assets/img/rocket.svg" height="10px" width="10px">',
         }).go();
 
 
-        if ($(window).width() < 468) {
+        if ($(window).width() < 400) {
             document.getElementById('waves').remove();
         }
 
